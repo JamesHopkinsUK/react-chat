@@ -6,8 +6,6 @@ const Buttons = (props) => {
     { text: "Two Buttons", handler: props.actionProvider.handleButtonChoiceTwo, id: 2 },
     { text: "Three Buttons", handler: props.actionProvider.handleButtonChoiceThree, id: 3 },
     { text: "Four Buttons", handler: props.actionProvider.handleButtonChoiceFour, id: 4 },
-    { text: "Misspelled button", handler: props.actionProvider.handleButtonChoiceMisspelled, id: 5 },
-    { text: "Unexpected button", handler: props.actionProvider.handleButtonChoiceUnexpected, id: 6 },
   ];
 
   const buttonsMarkup = buttons.map((button) => (

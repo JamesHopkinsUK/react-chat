@@ -47,6 +47,27 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
+  handleButtonChoiceFour = () => {
+    const message = this.createChatBotMessage("Four for sure:", {
+      widget: "buttonChoiceFour",
+    });
+    this.addMessageToState(message);
+  };
+
+  handleButtonChoiceMisspelled = () => {
+    const message = this.createChatBotMessage("My spelling isn't the best:", {
+      widget: "buttonChoiceMisspelled",
+    });
+    this.addMessageToState(message);
+  };
+
+  handleButtonChoiceUnexpected = () => {
+    const message = this.createChatBotMessage("Here is a button:", {
+      widget: "buttonChoiceUnexpected",
+    });
+    this.addMessageToState(message);
+  };
+
   handleCards = () => {
     const message = this.createChatBotMessage("Sure, pick which cards you would like:", {
       widget: "cards",

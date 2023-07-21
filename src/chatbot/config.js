@@ -5,6 +5,9 @@ import Buttons from "../Components/Buttons/Buttons";
 import ButtonChoice from "../Components/Buttons/OneButton";
 import ButtonChoiceTwo from "../Components/Buttons/TwoButtons";
 import ButtonChoiceThree from "../Components/Buttons/ThreeButtons";
+import ButtonChoiceFour from "../Components/Buttons/FourButtons";
+import ButtonChoiceMisspelled from "../Components/Buttons/MisspelledButton";
+import ButtonChoiceUnexpected from "../Components/Buttons/UnexpectedButton";
 import Cards from "../Components/Cards/Cards";
 
 const config = {
@@ -35,6 +38,18 @@ const config = {
     {
       widgetName: "buttonChoiceThree",
       widgetFunc: (props) => <ButtonChoiceThree {...props} />,
+    },
+    {
+      widgetName: "buttonChoiceFour",
+      widgetFunc: (props) => <ButtonChoiceFour {...props} />,
+    },
+    {
+      widgetName: "buttonChoiceMisspelled",
+      widgetFunc: (props) => <ButtonChoiceMisspelled {...props} />,
+    },
+    {
+      widgetName: "buttonChoiceUnexpected",
+      widgetFunc: (props) => <ButtonChoiceUnexpected {...props} />,
     },
     {
       widgetName: "cards",
